@@ -1,29 +1,29 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.timeDelta = void 0;
+exports.timeDelta = exports.getOperatorAndTotal = void 0;
 var types_1 = require("../types");
 var getDates_1 = require("../getters/getDates");
 var isBefore_1 = require("../equality/isBefore");
 var isAfter_1 = require("../equality/isAfter");
 var getOperatorAndTotal = function (to, from) {
-    if (from === void 0) { from = new Date(); }
-    var _a = getDates_1.getDates(to, from), compare = _a[0], recent = _a[1];
+    var _a = getDates_1.getDates(to, from), toDate = _a[0], fromDate = _a[1];
     var operator = 1;
-    if (isBefore_1.isBefore(compare, recent))
+    if (isBefore_1.isBefore(toDate, fromDate))
         operator = -1;
-    if (isAfter_1.isAfter(compare, recent))
+    if (isAfter_1.isAfter(toDate, fromDate))
         operator = +1;
-    var total = Math.abs(recent.getTime() - compare.getTime());
+    var total = Math.abs(fromDate.getTime() - toDate.getTime());
     return [operator, total];
 };
+exports.getOperatorAndTotal = getOperatorAndTotal;
 /**
  * @param target: PossibleConstructors target date
  * @param compare: PossibleConstructors compare date
  * @returns TimeDelta between two dates
  */
 var timeDelta = function (to, from) {
-    if (from === void 0) { from = new Date(); }
-    var _a = getOperatorAndTotal(to, from), operator = _a[0], total = _a[1];
+    if (from === void 0) { from = Date.now(); }
+    var _a = exports.getOperatorAndTotal(to, from), operator = _a[0], total = _a[1];
     var diff = total;
     var days = Math.floor(diff / types_1.Timeframe.Day) * operator;
     diff -= Math.abs(days * types_1.Timeframe.Day);

@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.humanize = exports.isPast = exports.isFuture = exports.pluralizeTimeframe = void 0;
+exports.humanize = exports.pluralizeTimeframe = void 0;
 var timeDelta_1 = require("./timeDelta");
+var isFuture_1 = require("./isFuture");
 var pluralize_1 = require("../helpers/pluralize");
 var humanizeTimeframe_1 = require("../humanize/humanizeTimeframe");
 var types_1 = require("../types");
@@ -10,13 +11,15 @@ var pluralizeTimeframe = function (count, timeframe) {
     return pluralize_1.pluralize(count, timeframeText);
 };
 exports.pluralizeTimeframe = pluralizeTimeframe;
-var isFuture = function (delta) { return (delta.days > 0 || Object.is(delta.days, +0)); };
-exports.isFuture = isFuture;
-var isPast = function (delta) { return (delta.days < 0 || Object.is(delta.days, -0)); };
-exports.isPast = isPast;
 var validValue = function (value) {
     var abs = Math.abs(value);
     return [abs >= 1, abs];
+};
+var humanizeFew = function (count, timeframe) {
+    if (count < 10) {
+        return "a few " + humanizeTimeframe_1.humanizeTimeframe(timeframe) + "s";
+    }
+    return exports.pluralizeTimeframe(count, timeframe);
 };
 var determineAccuracy = function (delta) {
     var _a = validValue(delta.days), validDays = _a[0], days = _a[1];
@@ -29,27 +32,26 @@ var determineAccuracy = function (delta) {
     }
     var _c = validValue(delta.minutes), validMinutes = _c[0], minutes = _c[1];
     if (validMinutes) {
-        return exports.pluralizeTimeframe(minutes, types_1.Timeframe.Minute);
+        return humanizeFew(minutes, types_1.Timeframe.Minute);
     }
     var absSeconds = Math.abs(delta.seconds);
-    if (absSeconds < 10) {
-        return 'a few seconds';
-    }
-    return exports.pluralizeTimeframe(absSeconds, types_1.Timeframe.Second);
+    return humanizeFew(absSeconds, types_1.Timeframe.Second);
 };
-var humanize = function (from, to) {
-    if (to === void 0) { to = new Date(); }
-    var delta = timeDelta_1.timeDelta(from, to);
+/**
+ * Humanize a date with respect to another.
+ * @param to: target datetime
+ * @param from (optional) - defaults to Date.now()
+ */
+var humanize = function (to, from) {
+    if (from === void 0) { from = Date.now(); }
+    var delta = timeDelta_1.timeDelta(to, from);
     var humanAccuracy = determineAccuracy(delta);
     if (delta.total === 0) {
         return 'right now';
     }
-    if (exports.isFuture(delta)) {
-        return humanAccuracy + " from now";
+    if (isFuture_1.isFuture(delta)) {
+        return "in " + humanAccuracy;
     }
-    if (exports.isPast(delta)) {
-        return humanAccuracy + " ago";
-    }
-    return 'CANNOT DETERMINE';
+    return humanAccuracy + " ago";
 };
 exports.humanize = humanize;

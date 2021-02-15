@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1613412065436" clover="3.2.0">
+  <project timestamp="1613412065436" name="All files">
+    <metrics statements="286" coveredstatements="239" conditionals="82" coveredconditionals="65" methods="55" coveredmethods="41" elements="423" coveredelements="345" complexity="0" loc="286" ncloc="286" packages="7" files="44" classes="44"/>
+    <package name="source">
+      <metrics statements="18" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="constants.ts" path="/Users/taylorstackpole/github/getDate/source/constants.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="22" type="stmt"/>
+        <line num="8" count="22" type="stmt"/>
+        <line num="12" count="22" type="stmt"/>
+        <line num="16" count="22" type="stmt"/>
+        <line num="20" count="22" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/taylorstackpole/github/getDate/source/index.ts">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="types.ts" path="/Users/taylorstackpole/github/getDate/source/types.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="22" type="stmt"/>
+        <line num="5" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="22" type="stmt"/>
+        <line num="13" count="22" type="stmt"/>
+        <line num="17" count="22" type="stmt"/>
+        <line num="21" count="22" type="stmt"/>
+        <line num="25" count="22" type="stmt"/>
+      </file>
+    </package>
+    <package name="source.equality">
+      <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="index.ts" path="/Users/taylorstackpole/github/getDate/source/equality/index.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="isAfter.ts" path="/Users/taylorstackpole/github/getDate/source/equality/isAfter.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="12" count="33" type="stmt"/>
+        <line num="13" count="33" type="stmt"/>
+      </file>
+      <file name="isBefore.ts" path="/Users/taylorstackpole/github/getDate/source/equality/isBefore.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="12" count="33" type="stmt"/>
+        <line num="13" count="33" type="stmt"/>
+      </file>
+      <file name="isEqual.ts" path="/Users/taylorstackpole/github/getDate/source/equality/isEqual.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="source.getters">
+      <metrics statements="43" coveredstatements="41" conditionals="8" coveredconditionals="8" methods="8" coveredmethods="7"/>
+      <file name="getDate.ts" path="/Users/taylorstackpole/github/getDate/source/getters/getDate.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="8" count="445" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="444" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="281" type="stmt"/>
+      </file>
+      <file name="getDateInputValue.ts" path="/Users/taylorstackpole/github/getDate/source/getters/getDateInputValue.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+      </file>
+      <file name="getDates.ts" path="/Users/taylorstackpole/github/getDate/source/getters/getDates.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="7" count="401" type="stmt"/>
+        <line num="8" count="201" type="stmt"/>
+      </file>
+      <file name="getDatetimeLocalInputValue.ts" path="/Users/taylorstackpole/github/getDate/source/getters/getDatetimeLocalInputValue.ts">
+        <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+      </file>
+      <file name="getStartOfDay.ts" path="/Users/taylorstackpole/github/getDate/source/getters/getStartOfDay.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="8" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+      </file>
+      <file name="getTime.ts" path="/Users/taylorstackpole/github/getDate/source/getters/getTime.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="getTimeString.ts" path="/Users/taylorstackpole/github/getDate/source/getters/getTimeString.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/taylorstackpole/github/getDate/source/getters/index.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="source.helpers">
+      <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="index.ts" path="/Users/taylorstackpole/github/getDate/source/helpers/index.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+      </file>
+      <file name="leftPad.ts" path="/Users/taylorstackpole/github/getDate/source/helpers/leftPad.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="38" type="cond" truecount="4" falsecount="0"/>
+        <line num="2" count="21" type="stmt"/>
+      </file>
+      <file name="pluralize.ts" path="/Users/taylorstackpole/github/getDate/source/helpers/pluralize.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="2" count="13" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="source.humanize">
+      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="humanizeDay.ts" path="/Users/taylorstackpole/github/getDate/source/humanize/humanizeDay.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="10" count="8" type="stmt"/>
+        <line num="14" count="16" type="stmt"/>
+      </file>
+      <file name="humanizeMonth.ts" path="/Users/taylorstackpole/github/getDate/source/humanize/humanizeMonth.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="13" count="24" type="stmt"/>
+      </file>
+      <file name="humanizeTimeframe.ts" path="/Users/taylorstackpole/github/getDate/source/humanize/humanizeTimeframe.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="4" count="20" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/taylorstackpole/github/getDate/source/humanize/index.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="source.math">
+      <metrics statements="57" coveredstatements="57" conditionals="28" coveredconditionals="28" methods="12" coveredmethods="12"/>
+      <file name="addDays.ts" path="/Users/taylorstackpole/github/getDate/source/math/addDays.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="8" type="stmt"/>
+      </file>
+      <file name="addHours.ts" path="/Users/taylorstackpole/github/getDate/source/math/addHours.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="7" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="8" type="stmt"/>
+      </file>
+      <file name="addMilliseconds.ts" path="/Users/taylorstackpole/github/getDate/source/math/addMilliseconds.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="7" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="8" type="stmt"/>
+      </file>
+      <file name="addMinutes.ts" path="/Users/taylorstackpole/github/getDate/source/math/addMinutes.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="7" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="8" type="stmt"/>
+      </file>
+      <file name="addSeconds.ts" path="/Users/taylorstackpole/github/getDate/source/math/addSeconds.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="7" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="8" type="stmt"/>
+      </file>
+      <file name="addTimeframe.ts" path="/Users/taylorstackpole/github/getDate/source/math/addTimeframe.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="9" count="57" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="57" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="56" type="stmt"/>
+        <line num="13" count="56" type="stmt"/>
+        <line num="14" count="56" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/taylorstackpole/github/getDate/source/math/index.ts">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="subtractDays.ts" path="/Users/taylorstackpole/github/getDate/source/math/subtractDays.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="7" count="5" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="subtractHours.ts" path="/Users/taylorstackpole/github/getDate/source/math/subtractHours.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="7" count="5" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="subtractMilliseconds.ts" path="/Users/taylorstackpole/github/getDate/source/math/subtractMilliseconds.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="7" count="5" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="subtractMinutes.ts" path="/Users/taylorstackpole/github/getDate/source/math/subtractMinutes.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="7" count="5" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="subtractSeconds.ts" path="/Users/taylorstackpole/github/getDate/source/math/subtractSeconds.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="7" count="5" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="subtractTimeframe.ts" path="/Users/taylorstackpole/github/getDate/source/math/subtractTimeframe.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="source.timeDelta">
+      <metrics statements="134" coveredstatements="95" conditionals="38" coveredconditionals="21" methods="24" coveredmethods="11"/>
+      <file name="difference.ts" path="/Users/taylorstackpole/github/getDate/source/timeDelta/difference.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="exclusiveRange.ts" path="/Users/taylorstackpole/github/getDate/source/timeDelta/exclusiveRange.ts">
+        <metrics statements="5" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="humanize.ts" path="/Users/taylorstackpole/github/getDate/source/timeDelta/humanize.ts">
+        <metrics statements="36" coveredstatements="36" conditionals="14" coveredconditionals="13" methods="5" coveredmethods="5"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="33" type="stmt"/>
+        <line num="15" count="33" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="15" type="stmt"/>
+        <line num="27" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="31" count="11" type="stmt"/>
+        <line num="32" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="36" count="7" type="stmt"/>
+        <line num="37" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="52" count="15" type="cond" truecount="1" falsecount="1"/>
+        <line num="54" count="15" type="stmt"/>
+        <line num="55" count="15" type="stmt"/>
+        <line num="56" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="59" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="60" count="7" type="stmt"/>
+        <line num="62" count="7" type="stmt"/>
+      </file>
+      <file name="inclusiveRange.ts" path="/Users/taylorstackpole/github/getDate/source/timeDelta/inclusiveRange.ts">
+        <metrics statements="5" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/taylorstackpole/github/getDate/source/timeDelta/index.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="isFuture.ts" path="/Users/taylorstackpole/github/getDate/source/timeDelta/isFuture.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="17" type="stmt"/>
+      </file>
+      <file name="isPast.ts" path="/Users/taylorstackpole/github/getDate/source/timeDelta/isPast.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="6" count="3" type="stmt"/>
+      </file>
+      <file name="range.ts" path="/Users/taylorstackpole/github/getDate/source/timeDelta/range.ts">
+        <metrics statements="49" coveredstatements="14" conditionals="12" coveredconditionals="0" methods="12" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="77" count="1" type="stmt"/>
+        <line num="80" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="81" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="83" count="0" type="stmt"/>
+      </file>
+      <file name="timeDelta.ts" path="/Users/taylorstackpole/github/getDate/source/timeDelta/timeDelta.ts">
+        <metrics statements="25" coveredstatements="25" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="10" count="30" type="stmt"/>
+        <line num="11" count="30" type="stmt"/>
+        <line num="12" count="30" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="30" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="30" type="stmt"/>
+        <line num="15" count="30" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="25" count="31" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="30" type="stmt"/>
+        <line num="28" count="30" type="stmt"/>
+        <line num="29" count="30" type="stmt"/>
+        <line num="30" count="30" type="stmt"/>
+        <line num="31" count="30" type="stmt"/>
+        <line num="32" count="30" type="stmt"/>
+        <line num="33" count="30" type="stmt"/>
+        <line num="34" count="30" type="stmt"/>
+        <line num="35" count="30" type="stmt"/>
+        <line num="36" count="30" type="stmt"/>
+        <line num="37" count="30" type="stmt"/>
+        <line num="38" count="30" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

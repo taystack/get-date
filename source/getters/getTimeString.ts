@@ -7,9 +7,9 @@ import { getDate } from './getDate'
  */
 export const getTimeString = (date: PossibleConstructors): string => {
   const d = getDate(date)
-  const hours = leftPad(d.getHours())
-  const minutes = leftPad(d.getMinutes())
-  const seconds = leftPad(d.getSeconds())
-  const milliseconds = leftPad(d.getMilliseconds(), 3)
+  const hours = leftPad(d.getUTCHours())
+  const minutes = leftPad(d.getUTCMinutes())
+  const seconds = leftPad(d.getUTCSeconds())
+  const milliseconds = leftPad(d.getUTCMilliseconds(), 3)
   return `${hours}:${minutes}:${seconds}.${milliseconds}`
 }

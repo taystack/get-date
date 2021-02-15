@@ -8,9 +8,9 @@ var leftPad_1 = require("../helpers/leftPad");
  */
 var getDateInputValue = function (date) {
     var d = getDate_1.getDate(date);
-    var day = leftPad_1.leftPad(d.getDate()); // Not zero indexed
-    var month = leftPad_1.leftPad(d.getMonth() + 1); // Zero indexed?
-    var year = d.getFullYear();
+    var day = leftPad_1.leftPad(d.getUTCDate()); // Not zero indexed
+    var month = leftPad_1.leftPad(d.getUTCMonth() + 1); // Zero indexed?
+    var year = d.getUTCFullYear();
     return year + "-" + month + "-" + day;
 };
 exports.getDateInputValue = getDateInputValue;

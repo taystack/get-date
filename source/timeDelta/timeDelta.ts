@@ -3,15 +3,15 @@ import { getDates } from '../getters/getDates'
 import { isBefore } from '../equality/isBefore'
 import { isAfter } from '../equality/isAfter'
 
-const getOperatorAndTotal = (
+export const getOperatorAndTotal = (
   to: PossibleConstructors,
-  from: PossibleConstructors = new Date()
+  from: PossibleConstructors,
 ): [number, number] => {
-  const [compare, recent] = getDates(to, from)
+  const [toDate, fromDate] = getDates(to, from)
   let operator = 1
-  if (isBefore(compare, recent)) operator = -1
-  if (isAfter(compare, recent)) operator = +1
-  const total = Math.abs(recent.getTime() - compare.getTime())
+  if (isBefore(toDate, fromDate)) operator = -1
+  if (isAfter(toDate, fromDate)) operator = +1
+  const total = Math.abs(fromDate.getTime() - toDate.getTime())
   return [operator, total]
 }
 
@@ -22,7 +22,7 @@ const getOperatorAndTotal = (
  */
 export const timeDelta = (
   to: PossibleConstructors,
-  from: PossibleConstructors = new Date()
+  from: PossibleConstructors = Date.now()
 ): TimeDelta => {
   const [operator, total] = getOperatorAndTotal(to, from)
   let diff = total

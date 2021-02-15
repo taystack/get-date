@@ -4,10 +4,12 @@ import type { Config } from '@jest/types'
 const config: Config.InitialOptions = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  // preset: 'ts-node',
   verbose: true,
   collectCoverage: true,
-  roots: ['<rootDir>/source'],
-  setupFiles: ["jest-date-mock"],
+  collectCoverageFrom: [
+    '<rootDir>/source/*.ts',
+    '<rootDir>/source/**/*.ts',
+  ],
+  roots: ['<rootDir>'],
 };
 export default config

@@ -1,5 +1,8 @@
-import { PossibleConstructors, TimeDelta, Timeframe } from '../types';
+import { PossibleConstructors, Timeframe } from '../types';
 export declare const pluralizeTimeframe: (count: number, timeframe: Timeframe) => string;
-export declare const isFuture: (delta: TimeDelta) => boolean;
-export declare const isPast: (delta: TimeDelta) => boolean;
-export declare const humanize: (from: PossibleConstructors, to?: PossibleConstructors) => string;
+/**
+ * Humanize a date with respect to another.
+ * @param to: target datetime
+ * @param from (optional) - defaults to Date.now()
+ */
+export declare const humanize: (to: PossibleConstructors, from?: PossibleConstructors) => string;

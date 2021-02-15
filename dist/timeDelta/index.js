@@ -12,6 +12,8 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./difference"), exports);
 __exportStar(require("./humanize"), exports);
+__exportStar(require("./isFuture"), exports);
+__exportStar(require("./isPast"), exports);
 __exportStar(require("./range"), exports);
 __exportStar(require("./inclusiveRange"), exports);
 __exportStar(require("./exclusiveRange"), exports);

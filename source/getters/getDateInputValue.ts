@@ -7,8 +7,8 @@ import { leftPad } from '../helpers/leftPad'
  */
 export const getDateInputValue = (date: PossibleConstructors): string => {
   const d = getDate(date)
-  const day = leftPad(d.getDate()) // Not zero indexed
-  const month = leftPad(d.getMonth() + 1) // Zero indexed?
-  const year = d.getFullYear()
+  const day = leftPad(d.getUTCDate()) // Not zero indexed
+  const month = leftPad(d.getUTCMonth() + 1) // Zero indexed?
+  const year = d.getUTCFullYear()
   return `${year}-${month}-${day}`
 }

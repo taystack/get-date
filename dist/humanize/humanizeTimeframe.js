@@ -9,6 +9,7 @@ var humanizeTimeframe = function (timeframe) {
         _a[types_1.Timeframe.Hour] = 'hour',
         _a[types_1.Timeframe.Minute] = 'minute',
         _a[types_1.Timeframe.Second] = 'second',
+        _a[types_1.Timeframe.Millisecond] = 'millisecond',
         _a)[timeframe]);
 };
 exports.humanizeTimeframe = humanizeTimeframe;

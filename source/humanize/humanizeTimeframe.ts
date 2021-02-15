@@ -6,4 +6,5 @@ export const humanizeTimeframe = (timeframe: Timeframe): string => ({
   [Timeframe.Hour]: 'hour',
   [Timeframe.Minute]: 'minute',
   [Timeframe.Second]: 'second',
+  [Timeframe.Millisecond]: 'millisecond',
 }[timeframe])

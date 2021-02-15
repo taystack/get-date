@@ -1,4 +1,5 @@
 import { PossibleConstructors, TimeDelta } from '../types';
+export declare const getOperatorAndTotal: (to: PossibleConstructors, from: PossibleConstructors) => [number, number];
 /**
  * @param target: PossibleConstructors target date
  * @param compare: PossibleConstructors compare date
