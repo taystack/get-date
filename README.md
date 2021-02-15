@@ -6,13 +6,21 @@
 
 `Moment.js` has been retired. It had math operations on dates. I think Math is helpful on Dates.
 
+> With `moment`
 ```typescript
-// with moment
-const today = new Date()
-const momentYesterday = moment(today).subtract(1, 'days')
+import moment from 'moment'
+const now = Date.now()
+const today = moment.utc(now)
+const momentYesterday = today.subtract(1, 'days')
+```
 
-// with getDate
-const getDateYesterday = subtractDays(today, 1)
+> With `@taystack/getDate`:
+```typescript
+import { getDate, subtractDays } from '@taystack/get-date' // es6
+// const { getDate, subtractDays } = require('@taystack/get-date') // es6
+const now = Date.now()
+const today = getDate(now)
+const getDateYesterday = subtractDays(now, 1)
 ```
 
 ### What else?
