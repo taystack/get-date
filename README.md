@@ -1,5 +1,7 @@
 # Javascript getDate
 
+### [Documentation](https://taystack.github.io/get-date)
+
 ### Why?
 
 `Moment.js` has been retired. It had math operations on dates. I think Math is helpful on Dates.
