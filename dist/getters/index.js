@@ -16,3 +16,4 @@ __exportStar(require("./getDates"), exports);
 __exportStar(require("./getDatetimeLocalInputValue"), exports);
 __exportStar(require("./getTime"), exports);
 __exportStar(require("./getTimeString"), exports);
+__exportStar(require("./getStartOfDay"), exports);

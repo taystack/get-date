@@ -4,3 +4,4 @@ export * from './getDates';
 export * from './getDatetimeLocalInputValue';
 export * from './getTime';
 export * from './getTimeString';
+export * from './getStartOfDay';
