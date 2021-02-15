@@ -7,7 +7,7 @@ exports.getDate = void 0;
  * string or number arguments.
  */
 var getDate = function (date) {
-    if (date === void 0) { date = new Date(); }
+    if (date === void 0) { date = Date.now(); }
     if (date instanceof Date) {
         return date;
     }

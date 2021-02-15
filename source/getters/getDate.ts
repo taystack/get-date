@@ -5,7 +5,7 @@ import { PossibleConstructors } from '../types'
  * Preserves refferential equality if Date is passed. Creates new Date() for
  * string or number arguments.
  */
-export const getDate = (date: PossibleConstructors = new Date()): Date => {
+export const getDate = (date: PossibleConstructors = Date.now()): Date => {
   if (date instanceof Date) { return date }
   return new Date(date)
 }
