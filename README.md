@@ -1,4 +1,5 @@
 # Javascript getDate
+[![codecov](https://codecov.io/gh/taystack/get-date/branch/master/graph/badge.svg?token=NU4F2FT8KN)](https://codecov.io/gh/taystack/get-date)
 
 ### [Documentation](https://taystack.github.io/get-date)
 
