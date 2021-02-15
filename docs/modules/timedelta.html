@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@taystack/get-date | @taystack/get-date</title>
+	<title>timeDelta | @taystack/get-date</title>
 	<meta name="description" content="Documentation for @taystack/get-date">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2652,7 +2652,7 @@ img {
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<strong><a href="index.html">@taystack/get-date</a></strong>
+					<strong><a href="../index.html">@taystack/get-date</a></strong>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -2682,56 +2682,331 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class=" tsd-kind-class tsd-parent-kind-module">
+			<a href="../classes/timedelta.timedeltarange.html" class="tsd-kind-icon">Time<wbr>Delta<wbr>Range</a>
+		</li>
+		<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+			<a href="timedelta.html#daterange" class="tsd-kind-icon">Date<wbr>Range</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="timedelta.html#difference" class="tsd-kind-icon">difference</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="timedelta.html#exclusiverange" class="tsd-kind-icon">exclusive<wbr>Range</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="timedelta.html#humanize" class="tsd-kind-icon">humanize</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="timedelta.html#inclusiverange" class="tsd-kind-icon">inclusive<wbr>Range</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="timedelta.html#isfuture" class="tsd-kind-icon">is<wbr>Future</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="timedelta.html#ispast" class="tsd-kind-icon">is<wbr>Past</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="timedelta.html#pluralizetimeframe" class="tsd-kind-icon">pluralize<wbr>Timeframe</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="timedelta.html#range" class="tsd-kind-icon">range</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="timedelta.html#timedelta-1" class="tsd-kind-icon">time<wbr>Delta</a>
+		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<div class="tsd-panel tsd-typography">
-			<a href="#javascript-getdate" id="javascript-getdate" style="color: inherit; text-decoration: none;">
-				<h1>Javascript getDate</h1>
-			</a>
-			<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
-				<h3><a href="https://taystack.github.io/get-date">Documentation</a></h3>
-			</a>
-			<a href="#why" id="why" style="color: inherit; text-decoration: none;">
-				<h3>Why?</h3>
-			</a>
-			<p><code>Moment.js</code> has been retired. It had math operations on dates. I think Math is helpful on Dates.</p>
-			<pre><code class="language-typescript"><span style="color: #008000">// with moment</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">today</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">()</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">momentYesterday</span><span style="color: #000000"> = </span><span style="color: #795E26">moment</span><span style="color: #000000">(</span><span style="color: #001080">today</span><span style="color: #000000">).</span><span style="color: #795E26">subtract</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;days&#039;</span><span style="color: #000000">)</span>
-
-<span style="color: #008000">// with getDate</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">getDateYesterday</span><span style="color: #000000"> = </span><span style="color: #795E26">subtractDays</span><span style="color: #000000">(</span><span style="color: #001080">today</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">)</span>
-</code></pre>
-			<a href="#what-else" id="what-else" style="color: inherit; text-decoration: none;">
-				<h3>What else?</h3>
-			</a>
-			<p>Some engineers prefer niladic/monadic functions opposed to interfacing with constructors directly. The following is an example of the difference between <code>new Date()</code> and <code>getDate</code> with respect to referential equality:</p>
-			<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
-				<h1>Installation</h1>
-			</a>
-			<pre><code class="language-bash"><span style="color: #000000">npm i @taystack/get-date</span>
-</code></pre>
-		</div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Modules</h3>
+						<h3>Classes</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-module"><a href="modules/constants.html" class="tsd-kind-icon">constants</a></li>
-							<li class="tsd-kind-module"><a href="modules/equality.html" class="tsd-kind-icon">equality</a></li>
-							<li class="tsd-kind-module"><a href="modules/getters.html" class="tsd-kind-icon">getters</a></li>
-							<li class="tsd-kind-module"><a href="modules/helpers.html" class="tsd-kind-icon">helpers</a></li>
-							<li class="tsd-kind-module"><a href="modules/humanize.html" class="tsd-kind-icon">humanize</a></li>
-							<li class="tsd-kind-module"><a href="modules/math.html" class="tsd-kind-icon">math</a></li>
-							<li class="tsd-kind-module"><a href="modules/timedelta.html" class="tsd-kind-icon">time<wbr>Delta</a></li>
-							<li class="tsd-kind-module"><a href="modules/types.html" class="tsd-kind-icon">types</a></li>
+							<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/timedelta.timedeltarange.html" class="tsd-kind-icon">Time<wbr>Delta<wbr>Range</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
+						<h3>Type aliases</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="timedelta.html#daterange" class="tsd-kind-icon">Date<wbr>Range</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
+						<h3>Functions</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="timedelta.html#difference" class="tsd-kind-icon">difference</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="timedelta.html#exclusiverange" class="tsd-kind-icon">exclusive<wbr>Range</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="timedelta.html#humanize" class="tsd-kind-icon">humanize</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="timedelta.html#inclusiverange" class="tsd-kind-icon">inclusive<wbr>Range</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="timedelta.html#isfuture" class="tsd-kind-icon">is<wbr>Future</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="timedelta.html#ispast" class="tsd-kind-icon">is<wbr>Past</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="timedelta.html#pluralizetimeframe" class="tsd-kind-icon">pluralize<wbr>Timeframe</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="timedelta.html#range" class="tsd-kind-icon">range</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="timedelta.html#timedelta-1" class="tsd-kind-icon">time<wbr>Delta</a></li>
 						</ul>
 					</section>
 				</div>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Type aliases</h2>
+			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+				<a name="daterange" class="tsd-anchor"></a>
+				<h3>Date<wbr>Range</h3>
+				<div class="tsd-signature tsd-kind-icon">Date<wbr>Range<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/timeDelta/range.ts#L5">timeDelta/range.ts:5</a></li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Functions</h2>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="difference" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> difference</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">difference<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, to<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/types.timedelta.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeDelta</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/timeDelta/difference.ts#L6">timeDelta/difference.ts:6</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>from: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>to: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="../interfaces/types.timedelta.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeDelta</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="exclusiverange" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> exclusive<wbr>Range</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">exclusive<wbr>Range<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, to<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, timeframe<span class="tsd-signature-symbol">?: </span><a href="../enums/types.timeframe.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Timeframe</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="timedelta.html#daterange" class="tsd-signature-type" data-tsd-kind="Type alias">DateRange</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/timeDelta/exclusiveRange.ts#L4">timeDelta/exclusiveRange.ts:4</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>from: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>to: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>timeframe: <a href="../enums/types.timeframe.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Timeframe</a><span class="tsd-signature-symbol"> = ...</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="timedelta.html#daterange" class="tsd-signature-type" data-tsd-kind="Type alias">DateRange</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="humanize" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> humanize</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">humanize<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, to<span class="tsd-signature-symbol">?: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/timeDelta/humanize.ts#L46">timeDelta/humanize.ts:46</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>from: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>to: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol"> = ...</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="inclusiverange" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> inclusive<wbr>Range</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">inclusive<wbr>Range<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, to<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, timeframe<span class="tsd-signature-symbol">?: </span><a href="../enums/types.timeframe.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Timeframe</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="timedelta.html#daterange" class="tsd-signature-type" data-tsd-kind="Type alias">DateRange</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/timeDelta/inclusiveRange.ts#L4">timeDelta/inclusiveRange.ts:4</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>from: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>to: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>timeframe: <a href="../enums/types.timeframe.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Timeframe</a><span class="tsd-signature-symbol"> = ...</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="timedelta.html#daterange" class="tsd-signature-type" data-tsd-kind="Type alias">DateRange</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="isfuture" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Future</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">is<wbr>Future<span class="tsd-signature-symbol">(</span>delta<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.timedelta.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeDelta</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/timeDelta/humanize.ts#L12">timeDelta/humanize.ts:12</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>delta: <a href="../interfaces/types.timedelta.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeDelta</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="ispast" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Past</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">is<wbr>Past<span class="tsd-signature-symbol">(</span>delta<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.timedelta.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeDelta</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/timeDelta/humanize.ts#L16">timeDelta/humanize.ts:16</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>delta: <a href="../interfaces/types.timedelta.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeDelta</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="pluralizetimeframe" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> pluralize<wbr>Timeframe</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">pluralize<wbr>Timeframe<span class="tsd-signature-symbol">(</span>count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, timeframe<span class="tsd-signature-symbol">: </span><a href="../enums/types.timeframe.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Timeframe</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/timeDelta/humanize.ts#L7">timeDelta/humanize.ts:7</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>count: <span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li>
+								<h5>timeframe: <a href="../enums/types.timeframe.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Timeframe</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="range" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> range</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">range<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, to<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, timeframe<span class="tsd-signature-symbol">?: </span><a href="../enums/types.timeframe.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Timeframe</a>, inclusive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="timedelta.html#daterange" class="tsd-signature-type" data-tsd-kind="Type alias">DateRange</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/timeDelta/range.ts#L77">timeDelta/range.ts:77</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>from: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>to: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>timeframe: <a href="../enums/types.timeframe.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Timeframe</a><span class="tsd-signature-symbol"> = ...</span></h5>
+							</li>
+							<li>
+								<h5>inclusive: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="timedelta.html#daterange" class="tsd-signature-type" data-tsd-kind="Type alias">DateRange</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="timedelta-1" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> time<wbr>Delta</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">time<wbr>Delta<span class="tsd-signature-symbol">(</span>to<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, from<span class="tsd-signature-symbol">?: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/types.timedelta.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeDelta</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/timeDelta/timeDelta.ts#L23">timeDelta/timeDelta.ts:23</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>to: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>from: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol"> = ...</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="../interfaces/types.timedelta.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeDelta</a></h4>
+						<p>TimeDelta between two dates</p>
+					</li>
+				</ul>
 			</section>
 		</section>
 		<footer class="with-border-bottom">

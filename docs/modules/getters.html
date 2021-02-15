@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@taystack/get-date | @taystack/get-date</title>
+	<title>getters | @taystack/get-date</title>
 	<meta name="description" content="Documentation for @taystack/get-date">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2652,7 +2652,7 @@ img {
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<strong><a href="index.html">@taystack/get-date</a></strong>
+					<strong><a href="../index.html">@taystack/get-date</a></strong>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -2682,56 +2682,210 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="getters.html#getdate" class="tsd-kind-icon">get<wbr>Date</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="getters.html#getdateinputvalue" class="tsd-kind-icon">get<wbr>Date<wbr>Input<wbr>Value</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="getters.html#getdates" class="tsd-kind-icon">get<wbr>Dates</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="getters.html#getdatetimelocalinputvalue" class="tsd-kind-icon">get<wbr>Datetime<wbr>Local<wbr>Input<wbr>Value</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="getters.html#gettime" class="tsd-kind-icon">get<wbr>Time</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="getters.html#gettimestring" class="tsd-kind-icon">get<wbr>Time<wbr>String</a>
+		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<div class="tsd-panel tsd-typography">
-			<a href="#javascript-getdate" id="javascript-getdate" style="color: inherit; text-decoration: none;">
-				<h1>Javascript getDate</h1>
-			</a>
-			<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
-				<h3><a href="https://taystack.github.io/get-date">Documentation</a></h3>
-			</a>
-			<a href="#why" id="why" style="color: inherit; text-decoration: none;">
-				<h3>Why?</h3>
-			</a>
-			<p><code>Moment.js</code> has been retired. It had math operations on dates. I think Math is helpful on Dates.</p>
-			<pre><code class="language-typescript"><span style="color: #008000">// with moment</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">today</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">()</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">momentYesterday</span><span style="color: #000000"> = </span><span style="color: #795E26">moment</span><span style="color: #000000">(</span><span style="color: #001080">today</span><span style="color: #000000">).</span><span style="color: #795E26">subtract</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;days&#039;</span><span style="color: #000000">)</span>
-
-<span style="color: #008000">// with getDate</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">getDateYesterday</span><span style="color: #000000"> = </span><span style="color: #795E26">subtractDays</span><span style="color: #000000">(</span><span style="color: #001080">today</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">)</span>
-</code></pre>
-			<a href="#what-else" id="what-else" style="color: inherit; text-decoration: none;">
-				<h3>What else?</h3>
-			</a>
-			<p>Some engineers prefer niladic/monadic functions opposed to interfacing with constructors directly. The following is an example of the difference between <code>new Date()</code> and <code>getDate</code> with respect to referential equality:</p>
-			<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
-				<h1>Installation</h1>
-			</a>
-			<pre><code class="language-bash"><span style="color: #000000">npm i @taystack/get-date</span>
-</code></pre>
-		</div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Modules</h3>
+						<h3>Functions</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-module"><a href="modules/constants.html" class="tsd-kind-icon">constants</a></li>
-							<li class="tsd-kind-module"><a href="modules/equality.html" class="tsd-kind-icon">equality</a></li>
-							<li class="tsd-kind-module"><a href="modules/getters.html" class="tsd-kind-icon">getters</a></li>
-							<li class="tsd-kind-module"><a href="modules/helpers.html" class="tsd-kind-icon">helpers</a></li>
-							<li class="tsd-kind-module"><a href="modules/humanize.html" class="tsd-kind-icon">humanize</a></li>
-							<li class="tsd-kind-module"><a href="modules/math.html" class="tsd-kind-icon">math</a></li>
-							<li class="tsd-kind-module"><a href="modules/timedelta.html" class="tsd-kind-icon">time<wbr>Delta</a></li>
-							<li class="tsd-kind-module"><a href="modules/types.html" class="tsd-kind-icon">types</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="getters.html#getdate" class="tsd-kind-icon">get<wbr>Date</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="getters.html#getdateinputvalue" class="tsd-kind-icon">get<wbr>Date<wbr>Input<wbr>Value</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="getters.html#getdates" class="tsd-kind-icon">get<wbr>Dates</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="getters.html#getdatetimelocalinputvalue" class="tsd-kind-icon">get<wbr>Datetime<wbr>Local<wbr>Input<wbr>Value</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="getters.html#gettime" class="tsd-kind-icon">get<wbr>Time</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="getters.html#gettimestring" class="tsd-kind-icon">get<wbr>Time<wbr>String</a></li>
 						</ul>
 					</section>
 				</div>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Functions</h2>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="getdate" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Date</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Date<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">?: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/getters/getDate.ts#L8">getters/getDate.ts:8</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol"> = ...</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						<p>Date from PossibleConstructors (Date, string, number, undefined.)
+							Preserves refferential equality if Date is passed. Creates new Date() for
+						string or number arguments.</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="getdateinputvalue" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Date<wbr>Input<wbr>Value</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Date<wbr>Input<wbr>Value<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/getters/getDateInputValue.ts#L8">getters/getDateInputValue.ts:8</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>get</dt>
+								<dd><p>input value for type=date</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="getdates" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Dates</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Dates<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>dates<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/getters/getDates.ts#L7">getters/getDates.ts:7</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>dates: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h4>
+						<p>Date[] from PossibleConstructors[] (Date, string, number, undefined)</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="getdatetimelocalinputvalue" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Datetime<wbr>Local<wbr>Input<wbr>Value</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Datetime<wbr>Local<wbr>Input<wbr>Value<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/getters/getDatetimeLocalInputValue.ts#L9">getters/getDatetimeLocalInputValue.ts:9</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>get</dt>
+								<dd><p>input value for type=&quot;datetime-local&quot;</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="gettime" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Time</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Time<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/getters/getTime.ts#L4">getters/getTime.ts:4</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="gettimestring" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Time<wbr>String</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Time<wbr>String<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/getters/getTimeString.ts#L8">getters/getTimeString.ts:8</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<dl class="tsd-comment-tags">
+								<dt>get</dt>
+								<dd><p>time: string hh:mm:ss.SSS</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					</li>
+				</ul>
 			</section>
 		</section>
 		<footer class="with-border-bottom">

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@taystack/get-date | @taystack/get-date</title>
+	<title>math | @taystack/get-date</title>
 	<meta name="description" content="Documentation for @taystack/get-date">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2652,7 +2652,7 @@ img {
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<strong><a href="index.html">@taystack/get-date</a></strong>
+					<strong><a href="../index.html">@taystack/get-date</a></strong>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -2682,56 +2682,441 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="math.html#adddays" class="tsd-kind-icon">add<wbr>Days</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="math.html#addhours" class="tsd-kind-icon">add<wbr>Hours</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="math.html#addmilliseconds" class="tsd-kind-icon">add<wbr>Milliseconds</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="math.html#addminutes" class="tsd-kind-icon">add<wbr>Minutes</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="math.html#addseconds" class="tsd-kind-icon">add<wbr>Seconds</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="math.html#addtimeframe" class="tsd-kind-icon">add<wbr>Timeframe</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="math.html#subtractdays" class="tsd-kind-icon">subtract<wbr>Days</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="math.html#subtracthours" class="tsd-kind-icon">subtract<wbr>Hours</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="math.html#subtractmilliseconds" class="tsd-kind-icon">subtract<wbr>Milliseconds</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="math.html#subtractminutes" class="tsd-kind-icon">subtract<wbr>Minutes</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="math.html#subtractseconds" class="tsd-kind-icon">subtract<wbr>Seconds</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-module">
+			<a href="math.html#subtracttimeframe" class="tsd-kind-icon">subtract<wbr>Timeframe</a>
+		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<div class="tsd-panel tsd-typography">
-			<a href="#javascript-getdate" id="javascript-getdate" style="color: inherit; text-decoration: none;">
-				<h1>Javascript getDate</h1>
-			</a>
-			<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
-				<h3><a href="https://taystack.github.io/get-date">Documentation</a></h3>
-			</a>
-			<a href="#why" id="why" style="color: inherit; text-decoration: none;">
-				<h3>Why?</h3>
-			</a>
-			<p><code>Moment.js</code> has been retired. It had math operations on dates. I think Math is helpful on Dates.</p>
-			<pre><code class="language-typescript"><span style="color: #008000">// with moment</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">today</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">()</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">momentYesterday</span><span style="color: #000000"> = </span><span style="color: #795E26">moment</span><span style="color: #000000">(</span><span style="color: #001080">today</span><span style="color: #000000">).</span><span style="color: #795E26">subtract</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;days&#039;</span><span style="color: #000000">)</span>
-
-<span style="color: #008000">// with getDate</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">getDateYesterday</span><span style="color: #000000"> = </span><span style="color: #795E26">subtractDays</span><span style="color: #000000">(</span><span style="color: #001080">today</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">)</span>
-</code></pre>
-			<a href="#what-else" id="what-else" style="color: inherit; text-decoration: none;">
-				<h3>What else?</h3>
-			</a>
-			<p>Some engineers prefer niladic/monadic functions opposed to interfacing with constructors directly. The following is an example of the difference between <code>new Date()</code> and <code>getDate</code> with respect to referential equality:</p>
-			<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
-				<h1>Installation</h1>
-			</a>
-			<pre><code class="language-bash"><span style="color: #000000">npm i @taystack/get-date</span>
-</code></pre>
-		</div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Modules</h3>
+						<h3>Functions</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-module"><a href="modules/constants.html" class="tsd-kind-icon">constants</a></li>
-							<li class="tsd-kind-module"><a href="modules/equality.html" class="tsd-kind-icon">equality</a></li>
-							<li class="tsd-kind-module"><a href="modules/getters.html" class="tsd-kind-icon">getters</a></li>
-							<li class="tsd-kind-module"><a href="modules/helpers.html" class="tsd-kind-icon">helpers</a></li>
-							<li class="tsd-kind-module"><a href="modules/humanize.html" class="tsd-kind-icon">humanize</a></li>
-							<li class="tsd-kind-module"><a href="modules/math.html" class="tsd-kind-icon">math</a></li>
-							<li class="tsd-kind-module"><a href="modules/timedelta.html" class="tsd-kind-icon">time<wbr>Delta</a></li>
-							<li class="tsd-kind-module"><a href="modules/types.html" class="tsd-kind-icon">types</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#adddays" class="tsd-kind-icon">add<wbr>Days</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#addhours" class="tsd-kind-icon">add<wbr>Hours</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#addmilliseconds" class="tsd-kind-icon">add<wbr>Milliseconds</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#addminutes" class="tsd-kind-icon">add<wbr>Minutes</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#addseconds" class="tsd-kind-icon">add<wbr>Seconds</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#addtimeframe" class="tsd-kind-icon">add<wbr>Timeframe</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#subtractdays" class="tsd-kind-icon">subtract<wbr>Days</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#subtracthours" class="tsd-kind-icon">subtract<wbr>Hours</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#subtractmilliseconds" class="tsd-kind-icon">subtract<wbr>Milliseconds</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#subtractminutes" class="tsd-kind-icon">subtract<wbr>Minutes</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#subtractseconds" class="tsd-kind-icon">subtract<wbr>Seconds</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#subtracttimeframe" class="tsd-kind-icon">subtract<wbr>Timeframe</a></li>
 						</ul>
 					</section>
 				</div>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Functions</h2>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="adddays" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> add<wbr>Days</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">add<wbr>Days<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, days<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/math/addDays.ts#L8">math/addDays.ts:8</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>days: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						<p>new MathDate()</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="addhours" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> add<wbr>Hours</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">add<wbr>Hours<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, hours<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/math/addHours.ts#L7">math/addHours.ts:7</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Short-hand addTimeframe() hours</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>hours: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="addmilliseconds" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> add<wbr>Milliseconds</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">add<wbr>Milliseconds<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, milliseconds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/math/addMilliseconds.ts#L7">math/addMilliseconds.ts:7</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Short-hand addTimeframe() milliseconds</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>milliseconds: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="addminutes" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> add<wbr>Minutes</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">add<wbr>Minutes<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, minutes<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/math/addMinutes.ts#L7">math/addMinutes.ts:7</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Short-hand addTimeframe() minutes</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>minutes: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="addseconds" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> add<wbr>Seconds</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">add<wbr>Seconds<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, seconds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/math/addSeconds.ts#L7">math/addSeconds.ts:7</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Short-hand addTimeframe() with seconds</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>seconds: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="addtimeframe" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> add<wbr>Timeframe</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">add<wbr>Timeframe<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, timeframe<span class="tsd-signature-symbol">?: </span><a href="../enums/types.timeframe.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Timeframe</a>, count<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/math/addTimeframe.ts#L7">math/addTimeframe.ts:7</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>timeframe: <a href="../enums/types.timeframe.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Timeframe</a><span class="tsd-signature-symbol"> = ...</span></h5>
+							</li>
+							<li>
+								<h5>count: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						<p>Date with count * Timeframe segments added</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="subtractdays" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> subtract<wbr>Days</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">subtract<wbr>Days<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, days<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/math/subtractDays.ts#L7">math/subtractDays.ts:7</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Short-hand subtractTimeframe() days</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>days: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="subtracthours" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> subtract<wbr>Hours</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">subtract<wbr>Hours<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, hours<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/math/subtractHours.ts#L7">math/subtractHours.ts:7</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Short-hand subtractTimeframe() hours</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>hours: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="subtractmilliseconds" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> subtract<wbr>Milliseconds</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">subtract<wbr>Milliseconds<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, milliseconds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/math/subtractMilliseconds.ts#L7">math/subtractMilliseconds.ts:7</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Short-hand subtractTimeframe() milliseconds</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>milliseconds: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="subtractminutes" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> subtract<wbr>Minutes</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">subtract<wbr>Minutes<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, minutes<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/math/subtractMinutes.ts#L7">math/subtractMinutes.ts:7</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Short-hand subtractTimeframe() minutes</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>minutes: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="subtractseconds" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> subtract<wbr>Seconds</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">subtract<wbr>Seconds<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, seconds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/math/subtractSeconds.ts#L7">math/subtractSeconds.ts:7</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Short-hand subtractTimeframe() seconds</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>seconds: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<a name="subtracttimeframe" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> subtract<wbr>Timeframe</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">subtract<wbr>Timeframe<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a>, timeframe<span class="tsd-signature-symbol">?: </span><a href="../enums/types.timeframe.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Timeframe</a>, count<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/taystack/get-date/blob/73b08f9/source/math/subtractTimeframe.ts#L7">math/subtractTimeframe.ts:7</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>short-hand for addTimeframe(date, timeframe, -count)</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>date: <a href="types.html#possibleconstructors" class="tsd-signature-type" data-tsd-kind="Type alias">PossibleConstructors</a></h5>
+							</li>
+							<li>
+								<h5>timeframe: <a href="../enums/types.timeframe.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Timeframe</a><span class="tsd-signature-symbol"> = ...</span></h5>
+							</li>
+							<li>
+								<h5>count: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+					</li>
+				</ul>
 			</section>
 		</section>
 		<footer class="with-border-bottom">
