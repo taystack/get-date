@@ -5,7 +5,7 @@
   "version": "0.1.1",
   "description": "Collection of native Date utils to replace core moment functions.",
   "scripts": {
-    "dist": "npx run tsc && npm run docs",
+    "dist": "npx tsc && npx typedoc",
     "docs": "npx typedoc",
     "tsc": "npx tsc",
     "test": "npx jest",
