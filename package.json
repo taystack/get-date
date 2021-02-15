@@ -5,8 +5,10 @@
   "version": "0.1.0",
   "description": "### Why?",
   "scripts": {
-    "precommit": "npx tsc && npx typedoc ./source/index.ts",
-    "test": "jest",
+    "dist": "npx run tsc && npm run docs",
+    "docs": "npx typedoc",
+    "tsc": "npx tsc",
+    "test": "npx jest",
     "watch": "npx tsc --watch"
   },
   "keywords": [

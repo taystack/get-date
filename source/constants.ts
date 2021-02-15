@@ -1,5 +1,20 @@
-export const MILLISECOND = 1 // Beautiful identity (no magic numbers here)
+/**
+ * Accuracy identity
+ */
+export const MILLISECOND = 1
+/**
+ * MILLISECOND * 1000
+ */
 export const SECOND = MILLISECOND * 1000
+/**
+ * SECOND * 60
+ */
 export const MINUTE = SECOND * 60
+/**
+ * MINUTE * 60
+ */
 export const HOUR = MINUTE * 60
+/**
+ * HOUR * 24
+ */
 export const DAY = HOUR * 24

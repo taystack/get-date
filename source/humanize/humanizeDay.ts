@@ -1,6 +1,9 @@
 import { PossibleConstructors } from '../types'
 import { getDate } from '../getters/getDate'
 
+/**
+ * ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+ */
 export const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
 
