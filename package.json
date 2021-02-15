@@ -1,12 +1,12 @@
 {
-  "name": "getDate",
+  "name": "@taystack/get-date",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
   "version": "0.1.0",
-  "description": "",
+  "description": "### Why?",
   "scripts": {
     "precommit": "npx tsc && npx typedoc ./source/index.ts",
-    "test": "./node_modules/.bin/jest",
+    "test": "jest",
     "watch": "npx tsc --watch"
   },
   "keywords": [
@@ -26,5 +26,35 @@
     "ts-node": "^9.1.1",
     "typedoc": "^0.20.24",
     "typescript": "^4.1.5"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "at-least-node": "^1.0.0",
+    "colors": "^1.4.0",
+    "fs-extra": "^9.1.0",
+    "handlebars": "^4.7.6",
+    "jsonfile": "^6.1.0",
+    "lunr": "^2.3.9",
+    "marked": "^2.0.0",
+    "neo-async": "^2.6.2",
+    "onigasm": "^2.2.5",
+    "progress": "^2.0.3",
+    "shelljs": "^0.8.4",
+    "shiki": "^0.9.2",
+    "universalify": "^2.0.0",
+    "typedoc-default-themes": "^0.12.7",
+    "uglify-js": "^3.12.8",
+    "vscode-textmate": "^5.2.0",
+    "wordwrap": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taystack/get-date.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taystack/get-date/issues"
+  },
+  "homepage": "https://taystack.github.io/get-date"
 }
