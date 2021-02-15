@@ -4,8 +4,7 @@ exports.addMinutes = void 0;
 var types_1 = require("../types");
 var addTimeframe_1 = require("./addTimeframe");
 /**
- * @param minutes: number of minute segments to add
- * @returns new MathDate()
+ * Short-hand addTimeframe() minutes
  */
 var addMinutes = function (date, minutes) {
     if (minutes === void 0) { minutes = 0; }

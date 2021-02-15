@@ -2,7 +2,7 @@ import { Timeframe, PossibleConstructors } from '../types'
 import { getDate } from '../getters/getDate'
 
 /**
- * @returns Date with Timeframe segments added
+ * @returns Date with count * Timeframe segments added
  */
 export const addTimeframe = (
   date: PossibleConstructors,

@@ -2,9 +2,7 @@ import { Timeframe, PossibleConstructors } from '../types'
 import { addTimeframe } from './addTimeframe'
 
 /**
- * @param hours: number of hour segments to add
- * @returns new MathDate()
+ * Short-hand addTimeframe() hours
  */
-export const addHours = (date: PossibleConstructors, hours = 0) => {
-  return addTimeframe(date, Timeframe.Hour, hours)
-}
+export const addHours = (date: PossibleConstructors, hours = 0): Date =>
+  addTimeframe(date, Timeframe.Hour, hours)

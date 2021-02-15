@@ -2,9 +2,6 @@ import { PossibleConstructors } from '../types'
 import { addSeconds } from './addSeconds'
 
 /**
- * @param seconds: number of minute segments to subtract
- * @returns new MathDate()
+ * Short-hand subtractTimeframe() seconds
  */
-export const subtractSeconds = (date: PossibleConstructors, seconds: number = 0) => {
-  return addSeconds(date, -seconds)
-}
+export const subtractSeconds = (date: PossibleConstructors, seconds: number = 0): Date => addSeconds(date, -seconds)

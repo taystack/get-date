@@ -4,7 +4,7 @@ exports.subtractTimeframe = void 0;
 var types_1 = require("../types");
 var addTimeframe_1 = require("./addTimeframe");
 /**
- * @returns Date with Timeframe segments subtracted
+ * short-hand for addTimeframe(date, timeframe, -count)
  */
 var subtractTimeframe = function (date, timeframe, count) {
     if (timeframe === void 0) { timeframe = types_1.Timeframe.Day; }

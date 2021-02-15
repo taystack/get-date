@@ -4,8 +4,7 @@ exports.addMilliseconds = void 0;
 var types_1 = require("../types");
 var addTimeframe_1 = require("./addTimeframe");
 /**
- * @param milliseconds: number of millisecond segments to add
- * @returns new MathDate()
+ * Short-hand addTimeframe() milliseconds
  */
 var addMilliseconds = function (date, milliseconds) {
     if (milliseconds === void 0) { milliseconds = 0; }

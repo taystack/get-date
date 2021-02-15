@@ -1,6 +1,5 @@
 import { PossibleConstructors } from '../types';
 /**
- * @param days: number of day segments to subtract
- * @returns new MathDate()
+ * Short-hand subtractTimeframe() days
  */
 export declare const subtractDays: (date: PossibleConstructors, days?: number) => Date;

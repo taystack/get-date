@@ -2,9 +2,6 @@ import { PossibleConstructors } from '../types'
 import { addMilliseconds } from './addMilliseconds'
 
 /**
- * @param milliseconds: number of millisecond segments to subtract
- * @returns new MathDate()
+ * Short-hand subtractTimeframe() milliseconds
  */
-export const subtractMilliseconds = (date: PossibleConstructors, milliseconds: number = 0) => {
-  return addMilliseconds(date, -milliseconds)
-}
+export const subtractMilliseconds = (date: PossibleConstructors, milliseconds: number = 0): Date => addMilliseconds(date, -milliseconds)

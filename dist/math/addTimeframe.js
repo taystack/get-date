@@ -4,7 +4,7 @@ exports.addTimeframe = void 0;
 var types_1 = require("../types");
 var getDate_1 = require("../getters/getDate");
 /**
- * @returns Date with Timeframe segments added
+ * @returns Date with count * Timeframe segments added
  */
 var addTimeframe = function (date, timeframe, count) {
     if (timeframe === void 0) { timeframe = types_1.Timeframe.Day; }

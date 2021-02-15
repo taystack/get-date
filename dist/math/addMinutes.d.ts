@@ -1,6 +1,5 @@
 import { PossibleConstructors } from '../types';
 /**
- * @param minutes: number of minute segments to add
- * @returns new MathDate()
+ * Short-hand addTimeframe() minutes
  */
 export declare const addMinutes: (date: PossibleConstructors, minutes?: number) => Date;
