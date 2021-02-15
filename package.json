@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "prepublish": "npx tsc && npx typedoc ./source/index.ts",
+    "precommit": "npx tsc && npx typedoc ./source/index.ts",
     "test": "./node_modules/.bin/jest",
     "watch": "npx tsc --watch"
   },
