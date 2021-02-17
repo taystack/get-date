@@ -1,41 +1,41 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.humanize = exports.pluralizeTimeframe = void 0;
+exports.humanize = exports.pluralizeStep = void 0;
 var timeDelta_1 = require("./timeDelta");
 var isFuture_1 = require("./isFuture");
 var pluralize_1 = require("../helpers/pluralize");
-var humanizeTimeframe_1 = require("../humanize/humanizeTimeframe");
+var humanizeStep_1 = require("../humanize/humanizeStep");
 var types_1 = require("../types");
-var pluralizeTimeframe = function (count, timeframe) {
-    var timeframeText = humanizeTimeframe_1.humanizeTimeframe(timeframe);
-    return pluralize_1.pluralize(count, timeframeText);
+var pluralizeStep = function (count, Step) {
+    var StepText = humanizeStep_1.humanizeStep(Step);
+    return pluralize_1.pluralize(count, StepText);
 };
-exports.pluralizeTimeframe = pluralizeTimeframe;
+exports.pluralizeStep = pluralizeStep;
 var validValue = function (value) {
     var abs = Math.abs(value);
     return [abs >= 1, abs];
 };
-var humanizeFew = function (count, timeframe) {
+var humanizeFew = function (count, Step) {
     if (count < 10) {
-        return "a few " + humanizeTimeframe_1.humanizeTimeframe(timeframe) + "s";
+        return "a few " + humanizeStep_1.humanizeStep(Step) + "s";
     }
-    return exports.pluralizeTimeframe(count, timeframe);
+    return exports.pluralizeStep(count, Step);
 };
 var determineAccuracy = function (delta) {
     var _a = validValue(delta.days), validDays = _a[0], days = _a[1];
     if (validDays) {
-        return exports.pluralizeTimeframe(days, types_1.Timeframe.Day);
+        return exports.pluralizeStep(days, types_1.Step.Day);
     }
     var _b = validValue(delta.hours), validHours = _b[0], hours = _b[1];
     if (validHours) {
-        return exports.pluralizeTimeframe(hours, types_1.Timeframe.Hour);
+        return exports.pluralizeStep(hours, types_1.Step.Hour);
     }
     var _c = validValue(delta.minutes), validMinutes = _c[0], minutes = _c[1];
     if (validMinutes) {
-        return humanizeFew(minutes, types_1.Timeframe.Minute);
+        return humanizeFew(minutes, types_1.Step.Minute);
     }
     var absSeconds = Math.abs(delta.seconds);
-    return humanizeFew(absSeconds, types_1.Timeframe.Second);
+    return humanizeFew(absSeconds, types_1.Step.Second);
 };
 /**
  * Humanize a date with respect to another.

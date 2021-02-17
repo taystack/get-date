@@ -1,11 +1,11 @@
 import {
-  addTimeframe,
+  addStep,
   addDays,
   addHours,
   addMinutes,
   addSeconds,
   addMilliseconds,
-  subtractTimeframe,
+  subtractStep,
   subtractDays,
   subtractHours,
   subtractMinutes,
@@ -15,13 +15,13 @@ import {
 
 describe('math', () => {
   it('should define utilities', () => {
-    expect(addTimeframe).toBeDefined()
+    expect(addStep).toBeDefined()
     expect(addDays).toBeDefined()
     expect(addHours).toBeDefined()
     expect(addMinutes).toBeDefined()
     expect(addSeconds).toBeDefined()
     expect(addMilliseconds).toBeDefined()
-    expect(subtractTimeframe).toBeDefined()
+    expect(subtractStep).toBeDefined()
     expect(subtractDays).toBeDefined()
     expect(subtractHours).toBeDefined()
     expect(subtractMinutes).toBeDefined()

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.subtractMilliseconds = void 0;
 var addMilliseconds_1 = require("./addMilliseconds");
 /**
- * Short-hand subtractTimeframe() milliseconds
+ * Short-hand subtractStep() milliseconds
  */
 var subtractMilliseconds = function (date, milliseconds) {
     if (milliseconds === void 0) { milliseconds = 0; }

@@ -1,8 +1,8 @@
-import { Timeframe, PossibleConstructors } from '../types'
-import { addTimeframe } from './addTimeframe'
+import { Step, PossibleConstructors } from '../types'
+import { addStep } from './addStep'
 
 /**
- * Short-hand addTimeframe() minutes
+ * Short-hand addStep() minutes
  */
 export const addMinutes = (date: PossibleConstructors, minutes = 0): Date =>
-  addTimeframe(date, Timeframe.Minute, minutes)
+  addStep(date, Step.Minute, minutes)

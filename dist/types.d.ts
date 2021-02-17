@@ -1,19 +1,29 @@
+/**
+ * Normalizing Date creation by allowing Date to be returned if passed.
+ */
 export declare type PossibleConstructors = Date | string | number;
-export declare enum Timeframe {
+/**
+ * Dates are stored as numbers in milliseconds since Jan 1, 1970 00:00:00.000
+ */
+export declare type DateRange = number[];
+/**
+ * Temporal segments of time
+ */
+export declare enum Step {
     /**
-     * Timeframe.Hour * 24
+     * Step.Hour * 24
      */
     Day,
     /**
-     * Timeframe.Minute * 60
+     * Step.Minute * 60
      */
     Hour,
     /**
-     * Timeframe.Second * 60
+     * Step.Second * 60
      */
     Minute,
     /**
-     * Timeframe.Millisecond * 1000
+     * Step.Millisecond * 1000
      */
     Second,
     /**
@@ -23,23 +33,23 @@ export declare enum Timeframe {
 }
 export interface TimeDelta {
     /**
-     * Difference in days +- after computing higher timeframes
+     * Difference in days +- after computing higher Steps
      */
     days: number;
     /**
-     * Difference in hours +- after computing higher timeframes
+     * Difference in hours +- after computing higher Steps
      */
     hours: number;
     /**
-     * Difference in minutes +- after computing higher timeframes
+     * Difference in minutes +- after computing higher Steps
      */
     minutes: number;
     /**
-     * Difference in seconds +- after computing higher timeframes
+     * Difference in seconds +- after computing higher Steps
      */
     seconds: number;
     /**
-     * Difference in milliseconds +- after computing higher timeframes
+     * Difference in milliseconds +- after computing higher Steps
      */
     milliseconds: number;
     /**

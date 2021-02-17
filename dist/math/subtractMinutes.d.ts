@@ -1,5 +1,5 @@
 import { PossibleConstructors } from '../types';
 /**
- * Short-hand subtractTimeframe() minutes
+ * Short-hand subtractStep() minutes
  */
 export declare const subtractMinutes: (date: PossibleConstructors, minutes?: number) => Date;

@@ -1,4 +1,4 @@
-import { PossibleConstructors, Timeframe } from '../source/types'
+import { PossibleConstructors, Step } from '../source/types'
 
 import { getDate } from '../source/getters/getDate'
 import { addMinutes } from '../source/math/addMinutes'
@@ -8,9 +8,9 @@ type TestCase = [PossibleConstructors, number, number]
 
 describe('addMinutes', () => {
   const testCases: TestCase[] = [
-    [0, 1, getDate(Timeframe.Minute).getTime()],
-    ['1970-01-01', 2, getDate(Timeframe.Minute * 2).getTime()],
-    [new Date(0), 3, getDate(Timeframe.Minute * 3).getTime()],
+    [0, 1, getDate(Step.Minute).getTime()],
+    ['1970-01-01', 2, getDate(Step.Minute * 2).getTime()],
+    [new Date(0), 3, getDate(Step.Minute * 3).getTime()],
   ]
   testCases.forEach(([date, count, expected]) => {
     it(`should resolve add ${count} days to ${date}`, () => {

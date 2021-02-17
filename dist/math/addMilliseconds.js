@@ -2,12 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.addMilliseconds = void 0;
 var types_1 = require("../types");
-var addTimeframe_1 = require("./addTimeframe");
+var addStep_1 = require("./addStep");
 /**
- * Short-hand addTimeframe() milliseconds
+ * Short-hand addStep() milliseconds
  */
 var addMilliseconds = function (date, milliseconds) {
     if (milliseconds === void 0) { milliseconds = 0; }
-    return addTimeframe_1.addTimeframe(date, types_1.Timeframe.Millisecond, milliseconds);
+    return addStep_1.addStep(date, types_1.Step.Millisecond, milliseconds);
 };
 exports.addMilliseconds = addMilliseconds;

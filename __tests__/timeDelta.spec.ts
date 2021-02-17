@@ -1,4 +1,4 @@
-import { Timeframe } from '../source/types'
+import { Step } from '../source/types'
 
 import { timeDelta } from '../source/timeDelta/timeDelta'
 
@@ -17,11 +17,11 @@ describe('timeDelta', () => {
 
   it('should show a positive difference to imply pointing at the future', () => {
     let total = 0
-    total += Timeframe.Millisecond
-    total += Timeframe.Second
-    total += Timeframe.Minute
-    total += Timeframe.Hour
-    total += Timeframe.Day
+    total += Step.Millisecond
+    total += Step.Second
+    total += Step.Minute
+    total += Step.Hour
+    total += Step.Day
     expect(timeDelta(total, 0)).toEqual({
       days: 1,
       hours: 1,
@@ -34,11 +34,11 @@ describe('timeDelta', () => {
 
   it('should show a negative difference to imply pointing at the past', () => {
     let total = 0
-    total += Timeframe.Millisecond
-    total += Timeframe.Second
-    total += Timeframe.Minute
-    total += Timeframe.Hour
-    total += Timeframe.Day
+    total += Step.Millisecond
+    total += Step.Second
+    total += Step.Minute
+    total += Step.Hour
+    total += Step.Day
     expect(timeDelta(0, total)).toEqual({
       days: -1,
       hours: -1,

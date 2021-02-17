@@ -2683,10 +2683,13 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-enum tsd-parent-kind-module">
-			<a href="../enums/types.timeframe.html" class="tsd-kind-icon">Timeframe</a>
+			<a href="../enums/types.step.html" class="tsd-kind-icon">Step</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-module">
 			<a href="../interfaces/types.timedelta.html" class="tsd-kind-icon">Time<wbr>Delta</a>
+		</li>
+		<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+			<a href="types.html#daterange" class="tsd-kind-icon">Date<wbr>Range</a>
 		</li>
 		<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 			<a href="types.html#possibleconstructors" class="tsd-kind-icon">Possible<wbr>Constructors</a>
@@ -2702,7 +2705,7 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Enumerations</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-enum tsd-parent-kind-module"><a href="../enums/types.timeframe.html" class="tsd-kind-icon">Timeframe</a></li>
+							<li class="tsd-kind-enum tsd-parent-kind-module"><a href="../enums/types.step.html" class="tsd-kind-icon">Step</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
@@ -2714,6 +2717,7 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Type aliases</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types.html#daterange" class="tsd-kind-icon">Date<wbr>Range</a></li>
 							<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types.html#possibleconstructors" class="tsd-kind-icon">Possible<wbr>Constructors</a></li>
 						</ul>
 					</section>
@@ -2723,14 +2727,34 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Type aliases</h2>
 			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+				<a name="daterange" class="tsd-anchor"></a>
+				<h3>Date<wbr>Range</h3>
+				<div class="tsd-signature tsd-kind-icon">Date<wbr>Range<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/taystack/get-date/blob/f37721e/source/types.ts#L11">types.ts:11</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Dates are stored as numbers in milliseconds since Jan 1, 1970 00:00:00.000</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 				<a name="possibleconstructors" class="tsd-anchor"></a>
 				<h3>Possible<wbr>Constructors</h3>
 				<div class="tsd-signature tsd-kind-icon">Possible<wbr>Constructors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/taystack/get-date/blob/06ccd63/source/types.ts#L3">types.ts:3</a></li>
+						<li>Defined in <a href="https://github.com/taystack/get-date/blob/f37721e/source/types.ts#L6">types.ts:6</a></li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Normalizing Date creation by allowing Date to be returned if passed.</p>
+					</div>
+				</div>
 			</section>
 		</section>
 		<footer class="with-border-bottom">
@@ -2747,9 +2771,6 @@ img {
 					</ul>
 					<ul class="tsd-legend">
 						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-					</ul>
-					<ul class="tsd-legend">
-						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 					</ul>
 				</div>
 			</div>

@@ -1,27 +1,30 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Timeframe = void 0;
+exports.Step = void 0;
 var constants_1 = require("./constants");
-var Timeframe;
-(function (Timeframe) {
+/**
+ * Temporal segments of time
+ */
+var Step;
+(function (Step) {
     /**
-     * Timeframe.Hour * 24
+     * Step.Hour * 24
      */
-    Timeframe[Timeframe["Day"] = constants_1.DAY] = "Day";
+    Step[Step["Day"] = constants_1.DAY] = "Day";
     /**
-     * Timeframe.Minute * 60
+     * Step.Minute * 60
      */
-    Timeframe[Timeframe["Hour"] = constants_1.HOUR] = "Hour";
+    Step[Step["Hour"] = constants_1.HOUR] = "Hour";
     /**
-     * Timeframe.Second * 60
+     * Step.Second * 60
      */
-    Timeframe[Timeframe["Minute"] = constants_1.MINUTE] = "Minute";
+    Step[Step["Minute"] = constants_1.MINUTE] = "Minute";
     /**
-     * Timeframe.Millisecond * 1000
+     * Step.Millisecond * 1000
      */
-    Timeframe[Timeframe["Second"] = constants_1.SECOND] = "Second";
+    Step[Step["Second"] = constants_1.SECOND] = "Second";
     /**
      * 1
      */
-    Timeframe[Timeframe["Millisecond"] = constants_1.MILLISECOND] = "Millisecond";
-})(Timeframe = exports.Timeframe || (exports.Timeframe = {}));
+    Step[Step["Millisecond"] = constants_1.MILLISECOND] = "Millisecond";
+})(Step = exports.Step || (exports.Step = {}));

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.subtractMinutes = void 0;
 var addMinutes_1 = require("./addMinutes");
 /**
- * Short-hand subtractTimeframe() minutes
+ * Short-hand subtractStep() minutes
  */
 var subtractMinutes = function (date, minutes) {
     if (minutes === void 0) { minutes = 0; }

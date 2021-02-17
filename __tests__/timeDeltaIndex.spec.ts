@@ -7,8 +7,7 @@ import {
   exclusiveRange,
   getOperatorAndTotal,
   timeDelta,
-  pluralizeTimeframe,
-  TimeDeltaRange,
+  pluralizeStep,
 } from '../source/timeDelta'
 
 describe('timeDelta', () => {
@@ -21,7 +20,6 @@ describe('timeDelta', () => {
     expect(exclusiveRange).toBeDefined()
     expect(getOperatorAndTotal).toBeDefined()
     expect(timeDelta).toBeDefined()
-    expect(pluralizeTimeframe).toBeDefined()
-    expect(TimeDeltaRange).toBeDefined()
+    expect(pluralizeStep).toBeDefined()
   })
 })

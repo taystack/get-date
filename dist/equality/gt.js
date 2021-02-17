@@ -1,13 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isAfter = void 0;
+exports.gt = void 0;
 var getDates_1 = require("../getters/getDates");
 /**
- * @param date: PossibleConstructors (MathDate, Date, string, number)
+ * @param target: PossibleConstructors
+ * @param compare: PossibleConstructors
  * @returns boolean if target is after compare
  */
-var isAfter = function (target, compare) {
+var gt = function (target, compare) {
     var _a = getDates_1.getDates(target, compare), d1 = _a[0], d2 = _a[1];
-    return d1.getTime() > d2.getTime();
+    return d1 > d2;
 };
-exports.isAfter = isAfter;
+exports.gt = gt;

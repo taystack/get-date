@@ -2690,6 +2690,7 @@ img {
 			<a href="#javascript-getdate" id="javascript-getdate" style="color: inherit; text-decoration: none;">
 				<h1>Javascript getDate</h1>
 			</a>
+			<p><a href="https://codecov.io/gh/taystack/get-date"><img src="https://codecov.io/gh/taystack/get-date/branch/master/graph/badge.svg?token=NU4F2FT8KN" alt="codecov"></a></p>
 			<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 				<h3><a href="https://taystack.github.io/get-date">Documentation</a></h3>
 			</a>
@@ -2697,12 +2698,22 @@ img {
 				<h3>Why?</h3>
 			</a>
 			<p><code>Moment.js</code> has been retired. It had math operations on dates. I think Math is helpful on Dates.</p>
-			<pre><code class="language-typescript"><span style="color: #008000">// with moment</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">today</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">()</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">momentYesterday</span><span style="color: #000000"> = </span><span style="color: #795E26">moment</span><span style="color: #000000">(</span><span style="color: #001080">today</span><span style="color: #000000">).</span><span style="color: #795E26">subtract</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;days&#039;</span><span style="color: #000000">)</span>
-
-<span style="color: #008000">// with getDate</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">getDateYesterday</span><span style="color: #000000"> = </span><span style="color: #795E26">subtractDays</span><span style="color: #000000">(</span><span style="color: #001080">today</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">)</span>
+			<blockquote>
+				<p>With <code>moment</code></p>
+			</blockquote>
+			<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">moment</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;moment&#039;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">now</span><span style="color: #000000"> = </span><span style="color: #267F99">Date</span><span style="color: #000000">.</span><span style="color: #795E26">now</span><span style="color: #000000">()</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">today</span><span style="color: #000000"> = </span><span style="color: #001080">moment</span><span style="color: #000000">.</span><span style="color: #795E26">utc</span><span style="color: #000000">(</span><span style="color: #001080">now</span><span style="color: #000000">)</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">momentYesterday</span><span style="color: #000000"> = </span><span style="color: #001080">today</span><span style="color: #000000">.</span><span style="color: #795E26">subtract</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;days&#039;</span><span style="color: #000000">)</span>
+</code></pre>
+			<blockquote>
+				<p>With <code>@taystack/getDate</code>:</p>
+			</blockquote>
+			<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getDate</span><span style="color: #000000">, </span><span style="color: #001080">subtractDays</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@taystack/get-date&#039;</span><span style="color: #000000"> </span><span style="color: #008000">// es6</span>
+<span style="color: #008000">// const { getDate, subtractDays } = require(&#039;@taystack/get-date&#039;) // es6</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">now</span><span style="color: #000000"> = </span><span style="color: #267F99">Date</span><span style="color: #000000">.</span><span style="color: #795E26">now</span><span style="color: #000000">()</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">today</span><span style="color: #000000"> = </span><span style="color: #795E26">getDate</span><span style="color: #000000">(</span><span style="color: #001080">now</span><span style="color: #000000">)</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">getDateYesterday</span><span style="color: #000000"> = </span><span style="color: #795E26">subtractDays</span><span style="color: #000000">(</span><span style="color: #001080">now</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">)</span>
 </code></pre>
 			<a href="#what-else" id="what-else" style="color: inherit; text-decoration: none;">
 				<h3>What else?</h3>
@@ -2749,9 +2760,6 @@ img {
 					</ul>
 					<ul class="tsd-legend">
 						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-					</ul>
-					<ul class="tsd-legend">
-						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 					</ul>
 				</div>
 			</div>

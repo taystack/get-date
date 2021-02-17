@@ -2,12 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.addHours = void 0;
 var types_1 = require("../types");
-var addTimeframe_1 = require("./addTimeframe");
+var addStep_1 = require("./addStep");
 /**
- * Short-hand addTimeframe() hours
+ * Short-hand addStep() hours
  */
 var addHours = function (date, hours) {
     if (hours === void 0) { hours = 0; }
-    return addTimeframe_1.addTimeframe(date, types_1.Timeframe.Hour, hours);
+    return addStep_1.addStep(date, types_1.Step.Hour, hours);
 };
 exports.addHours = addHours;

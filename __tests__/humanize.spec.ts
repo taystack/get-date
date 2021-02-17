@@ -1,5 +1,5 @@
 import {
-  humanizeTimeframe,
+  humanizeStep,
   getDay,
   getMonth,
   getUTCDay,
@@ -8,7 +8,7 @@ import {
 
 describe('humanize', () => {
   it('should define utilities', () => {
-    expect(humanizeTimeframe).toBeDefined()
+    expect(humanizeStep).toBeDefined()
     expect(getDay).toBeDefined()
     expect(getMonth).toBeDefined()
     expect(getUTCDay).toBeDefined()

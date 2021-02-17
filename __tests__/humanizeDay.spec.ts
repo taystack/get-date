@@ -1,4 +1,4 @@
-import { Timeframe } from '../source/types'
+import { Step } from '../source/types'
 
 import { getDay, getUTCDay } from '../source/humanize/humanizeDay'
 
@@ -8,13 +8,13 @@ type TestCase = [number, string]
 describe('humanizeDay', () => {
   const testCases: TestCase[] = [
     [0, "Thu"],
-    [Timeframe.Day, "Fri"],
-    [Timeframe.Day * 2, "Sat"],
-    [Timeframe.Day * 3, "Sun"],
-    [Timeframe.Day * 4, "Mon"],
-    [Timeframe.Day * 5, "Tue"],
-    [Timeframe.Day * 6, "Wed"],
-    [Timeframe.Day * 7, "Thu"],
+    [Step.Day, "Fri"],
+    [Step.Day * 2, "Sat"],
+    [Step.Day * 3, "Sun"],
+    [Step.Day * 4, "Mon"],
+    [Step.Day * 5, "Tue"],
+    [Step.Day * 6, "Wed"],
+    [Step.Day * 7, "Thu"],
   ]
   testCases.forEach(([ms, expected]) => {
     it(`should resolve getUTCDay ${ms} to ${expected}`, () => {

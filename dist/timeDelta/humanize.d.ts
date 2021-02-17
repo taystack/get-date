@@ -1,5 +1,5 @@
-import { PossibleConstructors, Timeframe } from '../types';
-export declare const pluralizeTimeframe: (count: number, timeframe: Timeframe) => string;
+import { PossibleConstructors, Step } from '../types';
+export declare const pluralizeStep: (count: number, Step: Step) => string;
 /**
  * Humanize a date with respect to another.
  * @param to: target datetime

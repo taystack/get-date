@@ -2,13 +2,14 @@ import { PossibleConstructors } from '../types'
 import { getDates } from '../getters/getDates'
 
 /**
- * @param date: PossibleConstructors (MathDate, Date, string, number)
+ * @param target: PossibleConstructors
+ * @param compare: PossibleConstructors
  * @returns boolean if target is after compare
  */
-export const isAfter = (
+export const gt = (
   target: PossibleConstructors,
   compare: PossibleConstructors
 ): boolean => {
   const [d1, d2] = getDates(target, compare)
-  return d1.getTime() > d2.getTime()
+  return d1 > d2
 }

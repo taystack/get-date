@@ -1,5 +1,5 @@
-import { Timeframe, PossibleConstructors } from '../types'
-import { addTimeframe } from './addTimeframe'
+import { Step, PossibleConstructors } from '../types'
+import { addStep } from './addStep'
 
 /**
  * @param days: number of day segments to add
@@ -8,4 +8,4 @@ import { addTimeframe } from './addTimeframe'
 export const addDays = (
   date: PossibleConstructors,
   days: number = 0
-): Date => addTimeframe(date, Timeframe.Day, days)
+): Date => addStep(date, Step.Day, days)

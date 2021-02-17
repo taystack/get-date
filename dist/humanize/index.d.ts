@@ -1,3 +1,3 @@
-export * from './humanizeTimeframe';
+export * from './humanizeStep';
 export * from './humanizeMonth';
 export * from './humanizeDay';

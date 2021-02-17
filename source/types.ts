@@ -1,22 +1,33 @@
 import { DAY, HOUR, MINUTE, MILLISECOND, SECOND } from './constants'
 
+/**
+ * Normalizing Date creation by allowing Date to be returned if passed.
+ */
 export type PossibleConstructors = Date | string | number
 
-export enum Timeframe {
+/**
+ * Dates are stored as numbers in milliseconds since Jan 1, 1970 00:00:00.000
+ */
+export type DateRange = number[]
+
+/**
+ * Temporal segments of time
+ */
+export enum Step {
   /**
-   * Timeframe.Hour * 24
+   * Step.Hour * 24
    */
   Day = DAY,
   /**
-   * Timeframe.Minute * 60
+   * Step.Minute * 60
    */
   Hour = HOUR,
   /**
-   * Timeframe.Second * 60
+   * Step.Second * 60
    */
   Minute = MINUTE,
   /**
-   * Timeframe.Millisecond * 1000
+   * Step.Millisecond * 1000
    */
   Second = SECOND,
   /**
@@ -27,23 +38,23 @@ export enum Timeframe {
 
 export interface TimeDelta {
   /**
-   * Difference in days +- after computing higher timeframes
+   * Difference in days +- after computing higher Steps
    */
   days: number
   /**
-   * Difference in hours +- after computing higher timeframes
+   * Difference in hours +- after computing higher Steps
    */
   hours: number
   /**
-   * Difference in minutes +- after computing higher timeframes
+   * Difference in minutes +- after computing higher Steps
    */
   minutes: number
   /**
-   * Difference in seconds +- after computing higher timeframes
+   * Difference in seconds +- after computing higher Steps
    */
   seconds: number
   /**
-   * Difference in milliseconds +- after computing higher timeframes
+   * Difference in milliseconds +- after computing higher Steps
    */
   milliseconds: number
   /**

@@ -1,68 +1,35 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.range = exports.TimeDeltaRange = void 0;
-var types_1 = require("../types");
-var getDate_1 = require("../getters/getDate");
-var normalizedRangeArguments = function (from, to) { return ([
-    getDate_1.getDate(getDate_1.getDate(from).getTime()),
-    getDate_1.getDate(to).getTime()
-]); };
-var exclusiveComparator = function (date, endTime) { return (date.getTime() < endTime); };
-var inclusiveComparator = function (date, endTime) { return (date.getTime() <= endTime); };
-var TimeDeltaRange = /** @class */ (function () {
-    function TimeDeltaRange(start, end, timeframe, inclusive) {
-        if (timeframe === void 0) { timeframe = types_1.Timeframe.Day; }
-        if (inclusive === void 0) { inclusive = false; }
-        this.values = [];
-        this.comparator = exclusiveComparator;
-        this.timeframe = types_1.Timeframe.Day;
-        this.inclusive = false;
-        this.pointer = new Date();
-        this.endTime = new Date().getTime();
-        this.start = start;
-        this.end = end;
-        this.timeframe = timeframe;
-        this.inclusive = inclusive;
-        this.createValues();
-    }
-    TimeDeltaRange.prototype.range = function () {
-        this.comparator = this.inclusive ? inclusiveComparator : exclusiveComparator;
-        this.timeframe = this.timeframe;
-        while (this.comparator(this.pointer, this.endTime)) {
-            this.values.push(this.pointer.getTime());
-            this.pointer.setTime(this.pointer.getTime() + this.timeframe);
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
         }
+        return t;
     };
-    TimeDeltaRange.prototype.createValues = function () {
-        var _a = normalizedRangeArguments(this.start, this.end), pointer = _a[0], endTime = _a[1];
-        this.comparator = this.inclusive ? inclusiveComparator : exclusiveComparator;
-        this.pointer = pointer;
-        this.endTime = endTime;
-        this.values = [];
-        this.range();
-    };
-    TimeDeltaRange.prototype.setTimeframe = function (timeframe) {
-        this.timeframe = timeframe,
-            this.createValues();
-    };
-    TimeDeltaRange.prototype.setInclusive = function (inclusive) {
-        this.inclusive = inclusive;
-        this.createValues();
-    };
-    TimeDeltaRange.prototype.setStart = function (start) {
-        this.start = start;
-        this.createValues();
-    };
-    TimeDeltaRange.prototype.setEnd = function (end) {
-        this.end = end;
-        this.createValues();
-    };
-    return TimeDeltaRange;
-}());
-exports.TimeDeltaRange = TimeDeltaRange;
-var range = function (from, to, timeframe, inclusive) {
-    if (timeframe === void 0) { timeframe = types_1.Timeframe.Day; }
-    if (inclusive === void 0) { inclusive = false; }
-    return new TimeDeltaRange(from, to, timeframe, inclusive).values;
+    return __assign.apply(this, arguments);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.range = void 0;
+var types_1 = require("../types");
+var TimeDeltaRange_1 = require("./TimeDeltaRange");
+var defaultConfig = {
+    inclusive: false,
+    from: Date.now(),
+    step: types_1.Step.Day,
+};
+/**
+ * Get a range of Date as number[]
+ * @param to: PossibleConstructors
+ * @param config: RangeConfig
+ * @param config.inclusive: boolean (false) Normal behavior is up-to the end date
+ * @param config.from: PossibleConstructors (Date.now())
+ * @param config.step: Step (Step.Day) step size of the range elements
+ * @returns number[]
+ */
+var range = function (to, config) {
+    var _a = __assign(__assign({}, defaultConfig), config), from = _a.from, step = _a.step, inclusive = _a.inclusive;
+    return new TimeDeltaRange_1.TimeDeltaRange(from, to, step, inclusive).values;
 };
 exports.range = range;

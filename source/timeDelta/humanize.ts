@@ -1,13 +1,13 @@
 import { timeDelta } from './timeDelta'
 import { isFuture } from './isFuture'
 import { pluralize } from '../helpers/pluralize'
-import { humanizeTimeframe } from '../humanize/humanizeTimeframe'
-import { PossibleConstructors, TimeDelta, Timeframe } from '../types'
+import { humanizeStep } from '../humanize/humanizeStep'
+import { PossibleConstructors, TimeDelta, Step } from '../types'
 
 
-export const pluralizeTimeframe = (count: number, timeframe: Timeframe): string => {
-  const timeframeText = humanizeTimeframe(timeframe)
-  return pluralize(count, timeframeText)
+export const pluralizeStep = (count: number, Step: Step): string => {
+  const StepText = humanizeStep(Step)
+  return pluralize(count, StepText)
 }
 
 const validValue = (value: number): [boolean, number] => {
@@ -15,31 +15,31 @@ const validValue = (value: number): [boolean, number] => {
   return [abs >= 1, abs]
 }
 
-const humanizeFew = (count: number, timeframe: Timeframe) => {
+const humanizeFew = (count: number, Step: Step) => {
   if (count < 10) {
-    return `a few ${humanizeTimeframe(timeframe)}s`
+    return `a few ${humanizeStep(Step)}s`
   }
-  return pluralizeTimeframe(count, timeframe)
+  return pluralizeStep(count, Step)
 }
 
 const determineAccuracy = (delta: TimeDelta): string => {
   const [validDays, days] = validValue(delta.days)
   if (validDays) {
-    return pluralizeTimeframe(days, Timeframe.Day)
+    return pluralizeStep(days, Step.Day)
   }
 
   const [validHours, hours] = validValue(delta.hours)
   if (validHours) {
-    return pluralizeTimeframe(hours, Timeframe.Hour)
+    return pluralizeStep(hours, Step.Hour)
   }
 
   const [validMinutes, minutes] = validValue(delta.minutes)
   if (validMinutes) {
-    return humanizeFew(minutes, Timeframe.Minute)
+    return humanizeFew(minutes, Step.Minute)
   }
 
   const absSeconds = Math.abs(delta.seconds)
-  return humanizeFew(absSeconds, Timeframe.Second)
+  return humanizeFew(absSeconds, Step.Second)
 }
 
 /**
