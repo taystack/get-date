@@ -1,5 +1,6 @@
 # Javascript getDate
 [![codecov](https://codecov.io/gh/taystack/get-date/branch/master/graph/badge.svg?token=NU4F2FT8KN)](https://codecov.io/gh/taystack/get-date)
+![npm](https://img.shields.io/npm/v/@taystack/get-date?label=Latest%20version)
 
 ### [Documentation](https://taystack.github.io/get-date)
 
