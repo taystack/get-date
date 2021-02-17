@@ -6,7 +6,7 @@ import { getDates } from '../getters/getDates'
  * @param compare: PossibleConstructors compare date
  * @returns boolean if target is the same date AND time as compare
  */
-export const isEqual = (
+export const eq = (
   target: PossibleConstructors,
   compare: PossibleConstructors
 ): boolean => {

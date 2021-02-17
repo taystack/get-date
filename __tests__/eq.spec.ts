@@ -1,19 +1,18 @@
 import { PossibleConstructors } from '../source/types'
-
-import { isAfter } from '../source/equality/isAfter'
+import { eq } from '../source/equality/eq'
 
 
 type TestCase = [PossibleConstructors, PossibleConstructors, boolean]
 
-describe('isAfter', () => {
+describe('Equal to - eq(l == r)', () => {
   const testCases: TestCase[] = [
-    [0, 0, false],
+    [0, 0, true],
     [0, 1, false],
-    [1, 0, true],
+    [1, 0, false],
   ]
   testCases.forEach(([from, to, expected]) => {
-    it(`should resolve ${from} isAfter ${to} to ${expected}`, () => {
-      expect(isAfter(from, to)).toEqual(expected)
+    it(`should resolve ${from} eq ${to} to ${expected}`, () => {
+      expect(eq(from, to)).toEqual(expected)
     })
   })
 })

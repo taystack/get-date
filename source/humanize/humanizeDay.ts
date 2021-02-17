@@ -1,16 +1,12 @@
 import { PossibleConstructors } from '../types'
+import { DAY_NAMES } from '../constants'
 import { getDate } from '../getters/getDate'
 
-/**
- * ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
- */
-export const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
-
-export const getUTCDay = (date: PossibleConstructors): string => (
-  DAYS[getDate(date).getUTCDay()]
+export const humanizeUTCDay = (date: PossibleConstructors): string => (
+  DAY_NAMES[getDate(date).getUTCDay()]
 )
 
-export const getDay = (date: PossibleConstructors): string => (
-  DAYS[getDate(date).getDay()]
+export const humanizeDay = (date: PossibleConstructors): string => (
+  DAY_NAMES[getDate(date).getDay()]
 )

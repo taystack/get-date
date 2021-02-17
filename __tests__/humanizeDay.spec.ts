@@ -1,6 +1,5 @@
 import { Step } from '../source/types'
-
-import { getDay, getUTCDay } from '../source/humanize/humanizeDay'
+import { humanizeDay, humanizeUTCDay } from '../source/humanize/humanizeDay'
 
 
 type TestCase = [number, string]
@@ -17,11 +16,11 @@ describe('humanizeDay', () => {
     [Step.Day * 7, "Thu"],
   ]
   testCases.forEach(([ms, expected]) => {
-    it(`should resolve getUTCDay ${ms} to ${expected}`, () => {
-      expect(getUTCDay(ms)).toEqual(expected)
+    it(`should resolve humanizeUTCDay ${ms} to ${expected}`, () => {
+      expect(humanizeUTCDay(ms)).toEqual(expected)
     })
-    it(`should resolve getDay ${ms} to ${expected}`, () => {
-      expect(getDay(ms)).toEqual(getDay(new Date(ms)))
+    it(`should resolve humanizeDay ${ms} to ${expected}`, () => {
+      expect(humanizeDay(ms)).toEqual(humanizeDay(new Date(ms)))
     })
   })
 })

@@ -1,3 +1,4 @@
-export * from './humanizeStep'
-export * from './humanizeMonth'
 export * from './humanizeDay'
+export * from './humanizeDifference'
+export * from './humanizeMonth'
+export * from './humanizeStep'

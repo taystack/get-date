@@ -4,7 +4,6 @@ import {
   getTime,
   getTimeString,
   getDateInputValue,
-  getDatetimeLocalInputValue,
   getStartOfDay,
 } from '../source/getters'
 
@@ -15,7 +14,6 @@ describe('getters', () => {
     expect(getTime).toBeDefined()
     expect(getTimeString).toBeDefined()
     expect(getDateInputValue).toBeDefined()
-    expect(getDatetimeLocalInputValue).toBeDefined()
     expect(getStartOfDay).toBeDefined()
   })
 })

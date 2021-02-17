@@ -1,5 +1,5 @@
-import { timeDelta } from './timeDelta'
-import { isFuture } from './isFuture'
+import { timeDelta } from '../timeDelta/timeDelta'
+import { isFuture } from '../timeDelta/isFuture'
 import { pluralize } from '../helpers/pluralize'
 import { humanizeStep } from '../humanize/humanizeStep'
 import { PossibleConstructors, TimeDelta, Step } from '../types'
@@ -47,7 +47,7 @@ const determineAccuracy = (delta: TimeDelta): string => {
  * @param to: target datetime
  * @param from (optional) - defaults to Date.now()
  */
-export const humanize = (
+export const humanizeDifference = (
   to: PossibleConstructors,
   from: PossibleConstructors = Date.now(),
 ): string => {

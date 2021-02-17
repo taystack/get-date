@@ -1,4 +1,4 @@
-import { getUTCMonth, getMonth } from '../source/humanize/humanizeMonth'
+import { humanizeUTCMonth, humanizeMonth } from '../source/humanize/humanizeMonth'
 
 
 type TestCase = [string, string]
@@ -19,12 +19,12 @@ describe('humanizeMonth', () => {
     ['2020-12-12', "Dec"],
   ]
   testCases.forEach(([date, expected]) => {
-    it(`should resolve getUTCMonth ${date} to ${expected}`, () => {
-      expect(getUTCMonth(date)).toEqual(expected)
+    it(`should resolve humanizeUTCMonth ${date} to ${expected}`, () => {
+      expect(humanizeUTCMonth(date)).toEqual(expected)
     })
 
-    it(`should resolve getMonth ${date} to ${expected}`, () => {
-      expect(getMonth(date)).toEqual(getMonth(new Date(date)))
+    it(`should resolve humanizeMonth ${date} to ${expected}`, () => {
+      expect(humanizeMonth(date)).toEqual(humanizeMonth(new Date(date)))
     })
   })
 })
