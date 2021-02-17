@@ -2690,7 +2690,8 @@ img {
 			<a href="#javascript-getdate" id="javascript-getdate" style="color: inherit; text-decoration: none;">
 				<h1>Javascript getDate</h1>
 			</a>
-			<p><a href="https://codecov.io/gh/taystack/get-date"><img src="https://codecov.io/gh/taystack/get-date/branch/master/graph/badge.svg?token=NU4F2FT8KN" alt="codecov"></a></p>
+			<p><a href="https://codecov.io/gh/taystack/get-date"><img src="https://codecov.io/gh/taystack/get-date/branch/master/graph/badge.svg?token=NU4F2FT8KN" alt="codecov"></a>
+			<img src="https://img.shields.io/npm/v/@taystack/get-date?label=Latest%20version" alt="npm"></p>
 			<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 				<h3><a href="https://taystack.github.io/get-date">Documentation</a></h3>
 			</a>
@@ -2710,7 +2711,7 @@ img {
 				<p>With <code>@taystack/getDate</code>:</p>
 			</blockquote>
 			<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getDate</span><span style="color: #000000">, </span><span style="color: #001080">subtractDays</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@taystack/get-date&#039;</span><span style="color: #000000"> </span><span style="color: #008000">// es6</span>
-<span style="color: #008000">// const { getDate, subtractDays } = require(&#039;@taystack/get-date&#039;) // es6</span>
+<span style="color: #008000">// const { getDate, subtractDays } = require(&#039;@taystack/get-date&#039;) // es5</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">now</span><span style="color: #000000"> = </span><span style="color: #267F99">Date</span><span style="color: #000000">.</span><span style="color: #795E26">now</span><span style="color: #000000">()</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">today</span><span style="color: #000000"> = </span><span style="color: #795E26">getDate</span><span style="color: #000000">(</span><span style="color: #001080">now</span><span style="color: #000000">)</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">getDateYesterday</span><span style="color: #000000"> = </span><span style="color: #795E26">subtractDays</span><span style="color: #000000">(</span><span style="color: #001080">now</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">)</span>
@@ -2718,11 +2719,90 @@ img {
 			<a href="#what-else" id="what-else" style="color: inherit; text-decoration: none;">
 				<h3>What else?</h3>
 			</a>
-			<p>Some engineers prefer niladic/monadic functions opposed to interfacing with constructors directly. The following is an example of the difference between <code>new Date()</code> and <code>getDate</code> with respect to referential equality:</p>
+			<p>There are no dependencies. This is a small set of helpers for working with native Javascript <code>Date</code> objects.</p>
 			<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 				<h1>Installation</h1>
 			</a>
 			<pre><code class="language-bash"><span style="color: #000000">npm i @taystack/get-date</span>
+</code></pre>
+			<a href="#api" id="api" style="color: inherit; text-decoration: none;">
+				<h1>API</h1>
+			</a>
+			<ul>
+				<li><a href="https://taystack.github.io/get-date/modules/getters.html">Getters</a><ul>
+						<li><a href="https://taystack.github.io/get-date/modules/getters.html#getdate">getDate</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/getters.html#getdates">getDates</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/getters.html#getTime">getTime</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/getters.html#getdateinputvalue">getDateInputValue</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/getters.html#getstartofday">getStartOfDay</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/getters.html#gettimestring">getTimeString</a></li>
+					</ul>
+				</li>
+				<li><a href="https://taystack.github.io/get-date/modules/equality.html">Equality</a><ul>
+						<li><a href="https://taystack.github.io/get-date/modules/equality.html#eq">eq</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/equality.html#gt">gt</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/equality.html#gte">gte</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/equality.html#lt">lt</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/equality.html#lte">lte</a></li>
+					</ul>
+				</li>
+				<li><a href="https://taystack.github.io/get-date/modules/math.html">Math</a><ul>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#adddays">addDays</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#addhours">addHours</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#addmilliseconds">addMilliseconds</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#addminutes">addMinutes</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#addseconds">addSeconds</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#addstep">addStep</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#subtractdays">subtractDays</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#subtracthours">subtractHours</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#subtractmilliseconds">subtractMilliseconds</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#subtractminutes">subtractMinutes</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#subtractseconds">subtractSeconds</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#subtractstep">subtractStep</a></li>
+					</ul>
+				</li>
+				<li><a href="https://taystack.github.io/get-date/modules/humanize.html">Humanize</a><ul>
+						<li><a href="https://taystack.github.io/get-date/modules/humanize.html#humanizeday">humanizeDay</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/humanize.html#humanizeDifference">humanizeDifference</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/humanize.html#humanizemonth">humanizeMonth</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/humanize.html#humanizestep">humanizeStep</a></li>
+					</ul>
+				</li>
+				<li><a href="https://taystack.github.io/get-date/modules/timedelta.html">TimeDelta</a><ul>
+						<li><a href="https://taystack.github.io/get-date/modules/timedelta.html#difference">difference</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/timedelta.html#exclusiverange">exclusiveRange</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/timedelta.html#inclusiverange">inclusiveRange</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/timedelta.html#range">range</a></li>
+					</ul>
+				</li>
+				<li><a href="https://taystack.github.io/get-date/modules/math.html">helpers</a><ul>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#leftpad">leftPad</a></li>
+						<li><a href="https://taystack.github.io/get-date/modules/math.html#pluralize">pluralize</a></li>
+					</ul>
+				</li>
+			</ul>
+			<a href="#getters" id="getters" style="color: inherit; text-decoration: none;">
+				<h2>Getters</h2>
+			</a>
+			<a href="#getdate" id="getdate" style="color: inherit; text-decoration: none;">
+				<h3>getDate</h3>
+			</a>
+			<p><a href="https://taystack.github.io/get-date/modules/getters.html#getdate">getDate documentation</a></p>
+			<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getDate</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@taystack/get-date&#039;</span>
+<span style="color: #795E26">getDate</span><span style="color: #000000">()</span>
+<span style="color: #008000">// Same as new Date()</span>
+<span style="color: #795E26">getDate</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">)</span>
+<span style="color: #008000">// new Date(0) -&gt; jan 1 1970</span>
+</code></pre>
+			<a href="#gettime" id="gettime" style="color: inherit; text-decoration: none;">
+				<h3>getTime</h3>
+			</a>
+			<p><a href="https://taystack.github.io/get-date/modules/getters.html#gettime">getTime documentation</a></p>
+			<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getTime</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@taystack/get-date&#039;</span>
+<span style="color: #795E26">getTime</span><span style="color: #000000">()</span>
+<span style="color: #008000">// Same as Date.now()</span>
+<span style="color: #795E26">getTime</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">)</span>
+<span style="color: #008000">// 0 -&gt; Short-hand new Date(0).getTime()</span>
 </code></pre>
 		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
