@@ -4,6 +4,8 @@
 
 ### [Documentation](https://taystack.github.io/get-date)
 
+### [Play on Runkit](https://npm.runkit.com/%40taystack%2Fget-date)
+
 ### Why?
 
 `Moment.js` has been retired. It had math operations on dates. I think Math is helpful on Dates.
