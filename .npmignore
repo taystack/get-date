@@ -1,3 +1,5 @@
+/__tests/
 /coverage/
 /node_modules/
 /docs/
+/source/
