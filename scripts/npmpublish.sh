@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Publish to npm
-npm publish --access public
+npm publish dist --access public
