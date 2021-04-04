@@ -2,7 +2,5 @@
 /coverage/
 /node_modules/
 /docs/
-/source/
 /coverage/
-/tsconfig.json
 /typedoc.js
