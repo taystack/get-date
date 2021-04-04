@@ -4,7 +4,7 @@ import { getDates } from '../getters/getDates'
 /**
  * @param target: PossibleConstructors
  * @param compare: PossibleConstructors
- * @returns boolean if target is after compare
+ * @returns boolean if target is before compare
  */
 export const lt = (
   target: PossibleConstructors,
