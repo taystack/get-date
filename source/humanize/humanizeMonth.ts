@@ -1,5 +1,5 @@
 import { PossibleConstructors } from '../types'
-import { MONTH_NAMES } from '../constants'
+import { MONTH_NAMES } from '../types'
 import { getDate } from '../getters/getDate'
 
 

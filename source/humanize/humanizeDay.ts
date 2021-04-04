@@ -1,5 +1,5 @@
 import { PossibleConstructors } from '../types'
-import { DAY_NAMES } from '../constants'
+import { DAY_NAMES } from '../types'
 import { getDate } from '../getters/getDate'
 
 
