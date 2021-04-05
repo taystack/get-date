@@ -1,3 +1,4 @@
+export * from './helpers'
 export * from './getters'
 export * from './equality'
 export * from './math'

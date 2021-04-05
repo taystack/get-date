@@ -2,7 +2,7 @@
   "name": "@taystack/get-date",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
-  "version": "0.9.9",
+  "version": "0.9.10",
   "description": "Collection of native Date utils to replace core moment functions.",
   "scripts": {
     "build": "npx tsc && npx typedoc",
